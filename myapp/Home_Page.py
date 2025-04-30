@@ -16,7 +16,7 @@ st.set_page_config(
                 'About': "# This is a header. This is an *extremely* cool app!"
             }
 )
-st.logo(image="./assets/logo.png",size="large", link=None)
+#st.logo(image="/assets/logo.png",size="large")
 
 # def get_base64(file_path):
 #     with open(file_path, "rb") as f:
