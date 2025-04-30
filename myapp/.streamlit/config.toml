@@ -1,6 +1,6 @@
 [theme]
-primaryColor = "#E694FF"
-backgroundColor = "#00172B"
-secondaryBackgroundColor = "#0083B8"
-textColor = "#DCDCDC"
-font = "sans-serif"
+primaryColor="#4CAF50"  # Forest Green (a darker, more grounded green)
+backgroundColor="#E8F5E9" # Very Light Green
+secondaryBackgroundColor="#D1C4E9" # Light Purple
+textColor="#212121"      # Very Dark Grey
+font="sans serif"
