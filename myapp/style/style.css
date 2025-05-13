@@ -1,33 +1,64 @@
-/* CSS Snippet from W3schools: https://www.w3schools.com/howto/howto_css_contact_form.asp */
-/* Style inputs with type="text", select elements and textareas */
-input[type=message], input[type=email], input[type=text], textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  button[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  button[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  
-  /* Hide Streamlit Branding */
-  #MainMenu {visibility: hidden;}
-  footer {visibility: hidden;}
+/* ------------------------------------------------------------------
+   Global colour palette – edit in ONE place to tweak the whole app
+-------------------------------------------------------------------*/
+:root{
+  --primary:        #1f3a93;   /* deep navy-blue */
+  --primary-dark:   #163070;   /* hover / focus shade */
+  --accent:         #18bc9c;   /* teal accent if you need it elsewhere */
+  --text-main:      #212529;   /* near-black body text */
+  --border-soft:    #b0c4de;   /* light steel-blue input borders */
+  --bg-body:        #f5f9ff;   /* very light blue page background */
+}
+
+/* ------------------------------------------------------------------
+   Page basics
+-------------------------------------------------------------------*/
+body{
+  background: var(--bg-body);
+  color: var(--text-main);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------
+   Inputs & textareas
+-------------------------------------------------------------------*/
+input[type=message],
+input[type=email],
+input[type=text],
+textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* ------------------------------------------------------------------
+   Submit button
+-------------------------------------------------------------------*/
+button[type=submit]{
+  background: var(--primary);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+button[type=submit]:hover{
+  background: var(--primary-dark);
+}
+
+/* ------------------------------------------------------------------
+   Streamlit branding hides (kept as-is)
+-------------------------------------------------------------------*/
+#MainMenu{visibility:hidden;}
+footer{visibility:hidden;}
+header{visibility:hidden;}
+
   header {visibility: hidden;}
